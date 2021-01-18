@@ -1,0 +1,53 @@
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, 'Limpieza', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, 'Wi-Fi', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (3, 'Mascotas', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (4, 'Aire acondicionado', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (5, 'Restaurante', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (6, 'Bar', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (7, 'Piscina', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (8, 'Buffet', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (9, 'Servicio al cuarto', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (10, 'Cafetería', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (11, 'Discoteca', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (12, 'Casino', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (13, 'Guías Turístico', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (14, 'Transporte', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (15, 'Lavandería', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (16, 'Gimnasio', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (17, 'Salón de Bellesza', NULL, NULL, NULL, Null);
+
+INSERT INTO service(id_service, service_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (18, 'Barbería', NULL, NULL, NULL, Null);

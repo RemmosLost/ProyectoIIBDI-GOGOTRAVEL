@@ -1,0 +1,15 @@
+USE `mytravelhome`;
+DROP procedure IF EXISTS `insert_person`;
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE PROCEDURE `insert_person` (IN pid_person VARCHAR(100), IN pbirthdate date, IN pfirst_name VARCHAR(50), IN pmiddle_name VARCHAR(50), IN pfirst_surname VARCHAR(50), IN psecond_surname  VARCHAR(50), IN pid_gender INT, IN pid_photo_person INT, IN pid_district INT, IN pid_banck_account INT)
+BEGIN
+	DECLARE EXIT HANDLER FOR 1105 SELECT 'Unknown error encountered.' Message;
+	DECLARE EXIT HANDLER FOR 1231 SELECT 'Variable cannot be set to that value.' Message;
+	DECLARE EXIT HANDLER FOR 1232 SELECT 'Incorrect argument type to variable.' Message;
+	INSERT INTO person(id_person, birthdate, first_name, middle_name, first_surname, second_surname, id_gender, id_photo_person, id_district, id_banck_account)
+    values (pid_person, pbirthdate, pfirst_name, pmiddle_name, pfirst_surname, psecond_surname, pid_gender, pid_photo_person, pid_district, pid_banck_account);
+    COMMIT;
+END$$
+
+DELIMITER ;

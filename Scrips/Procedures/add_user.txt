@@ -1,0 +1,18 @@
+USE mytravelhome;
+DROP procedure IF EXISTS passwordSecurity_addUser;
+
+DELIMITER $$
+USE mytravelhome$$
+CREATE DEFINER=root@localhost PROCEDURE passwordSecurity_addUser(IN pcUsername   VARCHAR(4000), IN pcPassword   VARCHAR(4000), IN pcId_type_user INT, pcId_person INT)
+BEGIN
+    INSERT INTO username (username, password, id_type_user, id_person)
+    VALUES (
+      pcUsername,
+      passwordSecurity_Encrypt(pcUsername, pcPassword),
+      pcId_type_user,
+      pcId_person
+    );
+    COMMIT;
+  END$$
+
+DELIMITER ;

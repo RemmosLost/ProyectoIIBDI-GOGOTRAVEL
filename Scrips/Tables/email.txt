@@ -1,0 +1,38 @@
+CREATE TABLE `mytravelhome`.`email` (
+  `id_email` INT NOT NULL,
+  `email_address` VARCHAR(150) NOT NULL,
+  `id_person` VARCHAR(45) NOT NULL,
+  `creation_date` DATETIME,
+  `creation_user` VARCHAR(45),
+  `last_update_date` DATETIME,
+  `last_update_user` VARCHAR(45),
+  PRIMARY KEY (`id_email`),
+  UNIQUE INDEX `id_email_UNIQUE` (`id_email` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`email_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`email_BEFORE_INSERT` BEFORE INSERT ON `email` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`email_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`email_BEFORE_UPDATE` BEFORE UPDATE ON `email` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+
+ALTER TABLE `mytravelhome`.`email` 
+CHANGE COLUMN `id_email` `id_email` INT NOT NULL AUTO_INCREMENT ;

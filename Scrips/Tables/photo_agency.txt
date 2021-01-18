@@ -1,0 +1,38 @@
+CREATE TABLE `mytravelhome`.`photo_agency` (
+  `id_photo_agency` INT NOT NULL AUTO_INCREMENT,
+  `photo` BLOB NOT NULL,
+  `id_hotel` INT NOT NULL,
+  `creation_date` DATETIME NULL,
+  `creation_user` VARCHAR(45) NULL,
+  `last_update_date` DATETIME NULL,
+  `last_update_user` VARCHAR(45) NULL,
+  PRIMARY KEY (`id_photo_agency`),
+  UNIQUE INDEX `id_photo_agency_UNIQUE` (`id_photo_agency` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`photo_agency_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`photo_agency_BEFORE_INSERT` BEFORE INSERT ON `photo_agency` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`photo_agency_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`photo_agency_BEFORE_UPDATE` BEFORE UPDATE ON `photo_agency` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+
+ALTER TABLE `mytravelhome`.`photo_agency` 
+DROP COLUMN `id_hotel`;

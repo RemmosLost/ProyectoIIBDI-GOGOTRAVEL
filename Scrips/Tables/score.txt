@@ -1,0 +1,41 @@
+CREATE TABLE `mytravelhome`.`score` (
+  `id_score` INT NOT NULL AUTO_INCREMENT,
+  `date` DATETIME NOT NULL,
+  `score` INT NOT NULL,
+  `id_hotel` INT NOT NULL,
+  `id_comment` INT NOT NULL,
+  `creation_date` DATETIME NULL DEFAULT NULL,
+  `creation_user` VARCHAR(45) NULL DEFAULT NULL,
+  `last_update_date` DATETIME NULL DEFAULT NULL,
+  `last_update_user` VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (`id_score`),
+  UNIQUE INDEX `id_score_UNIQUE` (`id_score` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`score_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`score_BEFORE_INSERT` BEFORE INSERT ON `score` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`score_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`score_BEFORE_UPDATE` BEFORE UPDATE ON `score` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+
+ALTER TABLE `mytravelhome`.`score` 
+CHANGE COLUMN `id_hotel` `id_hotel` INT NULL ,
+CHANGE COLUMN `id_comment` `id_comment` INT NULL ;

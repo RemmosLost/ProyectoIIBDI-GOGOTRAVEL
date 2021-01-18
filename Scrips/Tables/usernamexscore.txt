@@ -1,0 +1,39 @@
+CREATE TABLE `mytravelhome`.`usernamexscore` (
+  `username` VARCHAR(150) NOT NULL,
+  `id_score` INT NOT NULL,
+  `creation_user` DATETIME NULL DEFAULT NULL,
+  `creation_date` VARCHAR(45) NULL DEFAULT NULL,
+  `last_update_date` DATETIME NULL DEFAULT NULL,
+  `last_update_user` VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (`username`, `id_score`),
+  UNIQUE INDEX `username_UNIQUE` (`username` ASC) VISIBLE,
+  UNIQUE INDEX `id_score_UNIQUE` (`id_score` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`usernameXscore_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`usernameXscore_BEFORE_INSERT` BEFORE INSERT ON `usernameXscore` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`usernameXscore_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`usernameXscore_BEFORE_UPDATE` BEFORE UPDATE ON `usernameXscore` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+ALTER TABLE `mytravelhome`.`usernamexscore` 
+DROP INDEX `id_score_UNIQUE` ,
+DROP INDEX `username_UNIQUE` ;
+;

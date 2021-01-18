@@ -1,0 +1,16 @@
+USE `mytravelhome`;
+DROP procedure IF EXISTS `insert_category`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE PROCEDURE `insert_category` (IN pname VARCHAR(45))
+BEGIN
+	DECLARE EXIT HANDLER FOR 1105 SELECT 'Unknown error encountered.' Message;
+	DECLARE EXIT HANDLER FOR 1231 SELECT 'Variable cannot be set to that value.' Message;
+	DECLARE EXIT HANDLER FOR 1232 SELECT 'Incorrect argument type to variable.' Message;
+	INSERT INTO category(category_name)
+    values (pname);
+    COMMIT;
+END$$
+
+DELIMITER ;

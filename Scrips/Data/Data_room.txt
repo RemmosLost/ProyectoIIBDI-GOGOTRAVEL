@@ -1,0 +1,14 @@
+INSERT INTO room(id_room, room_name , id_status_r, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, 'Habitación Individual', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO room(id_room, room_name , id_status_r, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, 'Habitación Doble', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO room(id_room, room_name , id_status_r, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (3, 'Suites', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO room(id_room, room_name , id_status_r, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (4, 'Suites Matrimonial', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO room(id_room, room_name , id_status_r, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (5, 'Suites Presidencial', 1, NULL, NULL, NULL, Null);

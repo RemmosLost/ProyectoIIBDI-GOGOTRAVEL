@@ -1,0 +1,39 @@
+CREATE TABLE `mytravelhome`.`hotelxservice` (
+  `id_hotel` INT NOT NULL,
+  `id_service` INT NOT NULL,
+  `creation_date` DATETIME NULL DEFAULT NULL,
+  `creation_user` VARCHAR(45) NULL DEFAULT NULL,
+  `last_update_date` DATETIME NULL DEFAULT NULL,
+  `last_update_user` VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (`id_hotel`, `id_service`),
+  UNIQUE INDEX `id_hotel_UNIQUE` (`id_hotel` ASC) VISIBLE,
+  UNIQUE INDEX `id_service_UNIQUE` (`id_service` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`hotelxservice_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`hotelxservice_BEFORE_INSERT` BEFORE INSERT ON `hotelxservice` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`hotelxservice_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`hotelxservice_BEFORE_UPDATE` BEFORE UPDATE ON `hotelxservice` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+ALTER TABLE `mytravelhome`.`hotelxservice` 
+DROP INDEX `id_service_UNIQUE` ,
+DROP INDEX `id_hotel_UNIQUE` ;
+;

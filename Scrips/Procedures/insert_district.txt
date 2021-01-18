@@ -1,0 +1,16 @@
+USE `mytravelhome`;
+DROP procedure IF EXISTS `insert_district`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE PROCEDURE `insert_district` (IN pname VARCHAR(45), IN pid_canton INT)
+BEGIN
+	DECLARE EXIT HANDLER FOR 1105 SELECT 'Unknown error encountered.' Message;
+	DECLARE EXIT HANDLER FOR 1231 SELECT 'Variable cannot be set to that value.' Message;
+	DECLARE EXIT HANDLER FOR 1232 SELECT 'Incorrect argument type to variable.' Message;
+	INSERT INTO district(district_name, id_canton)
+    values (pname, pid_canton);
+    COMMIT;
+END$$
+
+DELIMITER ;

@@ -1,0 +1,59 @@
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, '9.88126', '-85.52864' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, '9.94986', '-85.67415' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (3, '10.28701', '-85.85023' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (4, '10.29182', '-85.85094' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (5, '10.30141', '-85.84072' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (6, '9.52669', '-84.46126' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (7, '9.49293', '-84.32433' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (8, '9.49293', '-84.22225' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (9, '9.07902', '-83.65564' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (10, '8.41430', '-83.12173' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (11, '9.73997', '-82.84543' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (12, '9.66084', '-82.77295' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (13, '10.53942', '-83.50152' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (14, '10.54228', '-83.50268' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (15, '10.54018', '-83.50197' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (16, '10.89676', '-84.78744' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (17, '10.70343', '-84.79772' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (18, '10.42715', '-84.74621' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (19, '10.42543', '-84.73574' , NULL, NULL, NULL, Null);
+
+INSERT INTO geolocation(id_geolocation, latitude , length, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (20, '10.47053', '-84.64279' , NULL, NULL, NULL, Null);

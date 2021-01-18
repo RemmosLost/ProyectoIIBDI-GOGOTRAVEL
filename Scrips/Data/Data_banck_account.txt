@@ -1,0 +1,62 @@
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1,'200001956358','500235779', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2,'200005555358','500235009', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (3,'300008952358','k12345678', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (4,'200001956669','117310571', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (5,'300999952358','117378971', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (6,'300111152358','113730331', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (7,'300008950023','718880331', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (8,'300102222358','313731105', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (9,'21300892589','113734571', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (10,'22200564789','113236231', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (11,'400000098358','110102256911140303', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (12,'400008941265','123456789000', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (13,'103356952008','454236231', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (14,'700256382358','354211131', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (15,'300002952555','651238238', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (16,'100008664358','521238238', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (17,'200108953322','761235538', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (18,'101118955638','357134138', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (19,'103268000259','589641020', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (20,'312508950008','152641020', NULL, NULL, NULL, Null);
+
+INSERT INTO banck_account(id_banck_account, banck_account, id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (21,'400006222591','117360763', NULL, NULL, NULL, Null);

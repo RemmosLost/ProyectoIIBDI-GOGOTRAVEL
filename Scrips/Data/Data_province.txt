@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------------------------
+--Province
+---------------------------------------------------------------------------------*/
+INSERT INTO province (id_province, id_country, province_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1,1, 'San Jose', NULL, NULL, Null, Null);
+
+INSERT INTO province (id_province, id_country, province_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2,1, 'Alajuela', NULL, NULL, Null, Null);
+
+INSERT INTO province (id_province, id_country, province_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ( 3,1, 'Cartago', NULL, NULL, Null, Null);
+
+INSERT INTO province (id_province, id_country, province_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ( 4, 1, 'Heredia', NULL, NULL, Null, Null);
+
+INSERT INTO province (id_province, id_country, province_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ( 5, 1, 'Guanacaste',NULL, NULL, Null, Null);
+
+INSERT INTO province (id_province, id_country, province_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (6, 1, 'Puntarenas', NULL, NULL, Null, Null);
+
+INSERT INTO province (id_province, id_country, province_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (7, 1, 'Limon', NULL, NULL, Null, Null);

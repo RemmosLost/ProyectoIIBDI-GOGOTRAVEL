@@ -1,0 +1,5 @@
+INSERT INTO type_user(id_type_user, type_user_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, 'Administrador',NULL, NULL, NULL, Null);
+
+INSERT INTO type_user(id_type_user,  type_user_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, 'Usuario',  NULL, NULL, NULL, Null);

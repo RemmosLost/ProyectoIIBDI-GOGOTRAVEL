@@ -1,0 +1,15 @@
+USE `mytravelhome`;
+DROP procedure IF EXISTS `insert_agency`;
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE PROCEDURE `insert_agency` (IN pagency_name VARCHAR(100), IN ppassword VARCHAR(150), IN pid_photo_agency INT)
+BEGIN
+	DECLARE EXIT HANDLER FOR 1105 SELECT 'Unknown error encountered.' Message;
+	DECLARE EXIT HANDLER FOR 1231 SELECT 'Variable cannot be set to that value.' Message;
+	DECLARE EXIT HANDLER FOR 1232 SELECT 'Incorrect argument type to variable.' Message;
+	INSERT INTO agency(agency_name, password, id_photo_agency)
+    values (pagency_name, ppassword, pid_photo_agency);
+    COMMIT;
+END$$
+
+DELIMITER ;

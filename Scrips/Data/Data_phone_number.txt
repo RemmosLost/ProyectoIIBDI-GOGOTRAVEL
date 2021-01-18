@@ -1,0 +1,63 @@
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, 69823723,'500235779', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, 65673723,'500235009', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (3, 87330723,'k12345678', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (4, 80230723,'117378971', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (5, 87352323,'113730331', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (6, 65230723,'718880331', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (7, 87330363,'313731105', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (8, 87330723,'113734571', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (9, 70312725,'113236231',NULL, NULL, NULL, Null);
+
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (10, 83612725,'110102256911140303',NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (11, 66659723,'123456789000', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (12, 60000723,'454236231', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (13, 87333323,'354211131',NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (14, 80503723,'651238238', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (15, 87352555,'761231138', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (16, 65232123,'357134138', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (17, 87986363,'589641020', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (18, 87001723,'152641020', NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (19, 70020835,'761235538',NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (20, 83117510,'117310571',NULL, NULL, NULL, Null);
+
+INSERT INTO phone_number(id_phone_number, phone_number, id_person ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (21, 71011725,'761235538',NULL, NULL, NULL, Null);

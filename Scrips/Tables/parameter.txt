@@ -1,0 +1,39 @@
+CREATE TABLE `mytravelhome`.`parameter` (
+  `id_parameter` INT NOT NULL AUTO_INCREMENT,
+  `parameter_descrption` VARCHAR(45) NOT NULL,
+  `parameter_value` VARCHAR(45) NOT NULL,
+  `creation_date` DATETIME NULL,
+  `creation_user` VARCHAR(45) NULL,
+  `last_update_date` DATETIME NULL,
+  `last_update_user` VARCHAR(45) NULL,
+  PRIMARY KEY (`id_parameter`),
+  UNIQUE INDEX `id_parameter_UNIQUE` (`id_parameter` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`parameter_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`parameter_BEFORE_INSERT` BEFORE INSERT ON `parameter` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`parameter_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`parameter_BEFORE_UPDATE` BEFORE UPDATE ON `parameter` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+
+ALTER TABLE `mytravelhome`.`parameter` 
+DROP COLUMN `parameter_descrption`;
+

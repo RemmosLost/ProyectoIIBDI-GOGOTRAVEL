@@ -1,0 +1,245 @@
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (1, 1, 'San Jose', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (2, 1, 'Escazu', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (3, 1, 'Desamparados', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (4, 1, 'Puriscal', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (5, 1, 'Tarrazu', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton,  id_province, name,creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (6, 1, 'Aserri', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (7, 1, 'Mora', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (8, 1, 'Goicoechea', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (9, 1, 'Santa Ana', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (10, 1, 'Alajuelita', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (11, 1, 'Vazquez de Coronado', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (12, 1, 'Acosta', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (13, 1, 'Tibas', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (14, 1, 'Moravia', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (15, 1, 'Montes de Oca', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (16, 1, 'Turrubares', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (17, 1, 'Dota', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (18, 1, 'Curridabat', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (19, 1, 'Perez Zeledon', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (20, 1, 'Leon Cortes', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (21, 2, 'Alajuela', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (22, 2, 'San Ramon', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (23, 2, 'Grecia', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (24, 2, 'San Mateo', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (25, 2, 'Atenas', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (26, 2, 'Naranjo', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (27, 2, 'Palmares', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (28, 2, 'Poas', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (29, 2, 'Orotina', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (30, 2, 'San Carlos', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (31, 2, 'Zarcero', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (32, 2, 'Sarchi', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (33, 2, 'Upala', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (34, 2, 'Los Chiles', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (35, 2, 'Guatuso', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (36, 3, 'Cartago', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (37, 3, 'Paraiso', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (38, 3, 'La Union', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (39, 3, 'Jimenez', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (40, 3, 'Turrialba', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (41, 3, 'Alvarado', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (42, 3, 'Oreamuno', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (43, 3, 'El Guarco', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (44, 4, 'Heredia', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (45, 4, 'Barva', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (46, 4, 'Santo Domingo', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (47, 4, 'Santa Barbara', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (48, 4, 'San Rafael', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (49, 4, 'San Isidro', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (50, 4, 'Belen', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (51, 4, 'Flores', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (52, 4, 'San Pablo', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (53, 4, 'Sarapiqui', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (54, 5, 'Liberia', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (55, 5, 'Nicoya', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (56, 5, 'Santa Cruz', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (57, 5, 'Bagaces', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (58, 5, 'Carrillo', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (59, 5, 'Canas', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (60, 5, 'Abangares', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (61, 5, 'Tilaran', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (62, 5, 'Nadayure', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (63, 5, 'La Cruz', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (64, 5, 'Hojancha', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (65, 6, 'Puntarenas', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (66, 6, 'Esparza', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (67, 6, 'Buenos Aires', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (68, 6, 'Montes de Oro', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (69, 6, 'Osa', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (70, 6, 'Quepos', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (71, 6, 'Golfito', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (72, 6, 'Coto Brus', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (73, 6, 'Parrita', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (74, 6, 'Corredores', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (75, 6, 'Garabito', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name,creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (76, 7, 'Limon', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (77, 7, 'Pococi', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (78, 7, 'Siquirres', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (79, 7, 'Talamanca', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (80, 7, 'Matina', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (81, 7, 'Guacimo', NULL, NULL, NULL, Null);
+
+INSERT INTO canton (id_canton, id_province, name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (82, 2, 'Río Cuarto', NULL, NULL, NULL, Null);

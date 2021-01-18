@@ -1,0 +1,62 @@
+INSERT INTO person(id_person, first_name,middle_name, first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('500235779', 'Ricardo', 'Sergio', 'Vargas','Blanco', DATE'1950-12-16', '1',366, 1, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('500235009', 'Berta', 'Daniela', 'Mora','Marín', DATE'1990-07-03', 2, 380, 2 , NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('k12345678', 'Carón', 'Elizabeth', 'Sample','Marín', DATE'1966-11-01', 3,289, 2, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('117310571', 'Rebeca', 'María', 'Madrigal','Arguedas', DATE'1999-01-07',  4, 107, 2, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('117378971', 'María', NULL, 'Melano','Cierra', DATE'1980-11-30', 5,285, 3, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('113730331', 'Unberto', 'Berto', 'Barbosa','Bermudes', DATE'1954-06-06',  6, 216, 1, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('718880331', 'Calvin', 'Carlo', 'Castro','Castillo', DATE'1973-02-14',  7, 223, 4, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('313731105', 'Enzo', 'Lucrecio', 'Suárez','Zeledón', DATE'1961-12-22',  8, 316, 1, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('113734571', 'Josep', 'Thiago', 'Jurado','Juez', DATE'1989-12-31',  9, 306, 1, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('113236231', 'Laura', 'Lucrecia', 'Pedrero','Pedrasco', DATE'1996-07-07',  10, 314, 2, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('110102256911140303', 'CHAO', NULL, 'Gen',NULL, DATE'1956-10-03',  11, 216, 1, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('123456789000', 'Yikimaro',NULL, 'Fuyimoto',NULL, DATE'2001-12-19',  12, 216, 1, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('454236231', 'Avelio', 'Josúe', 'Ferrano','Piso', DATE'1995-10-25',  13, 248, 3, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('354211131', 'Mireya', 'Casal', 'Avenida','Cruz', DATE'1985-02-15',  14, 245, 4, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('651238238', 'Balbina', 'Daniela', 'Duarte','Durán', DATE'1986-11-30',  15, 250, 2, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('521238238', 'Berta', 'María', 'Duarte','Durán', DATE'1986-11-30',  16, 250, 2, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('761235538', 'Francisco', 'Antonio', 'Borja','Sola', DATE'2003-05-13',  17, 250, 1, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('357134138', 'Martín', NULL , 'Murcia','Mora', DATE'2005-05-10',  18, 250, 1, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('589641020', 'Abraham', 'Antonio', 'Hermida','Jackson', DATE'1999-01-20',  19, 250, 4, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('152641020', 'Gloria', 'Marta', 'Pujol','Solano', DATE'1954-04-26',  20, 250, 2, NULL, NULL, NULL, Null);
+
+INSERT INTO person(id_person, first_name , middle_name , first_surname, second_surname, birthdate, id_banck_account, id_district, id_gender, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('117360763', 'David', NULL, 'Brenes','Martínes', DATE'1999-03-10', 21, 91, 1, NULL, NULL, NULL, Null);

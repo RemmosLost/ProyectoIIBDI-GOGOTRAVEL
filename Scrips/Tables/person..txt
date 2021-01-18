@@ -1,0 +1,55 @@
+CREATE TABLE `mytravelhome`.`person` (
+  `id_person` VARCHAR(30) NOT NULL,
+  `first_name` VARCHAR(50) NOT NULL,
+  `middle_name` VARCHAR(50) NULL,
+  `first_surname` VARCHAR(50) NOT NULL,
+  `second_surname` VARCHAR(50) NULL,
+  `birthdate` DATE NOT NULL,
+  `id_photo_person` INT NULL,
+  `id_banck_account` VARCHAR(100) NULL,
+  `id_district` INT NULL,
+  `id_gender` INT NULL,
+  `creation_date` DATETIME NULL DEFAULT NULL,
+  `creation_user` VARCHAR(100) NULL DEFAULT NULL,
+  `last_update_date` DATETIME NULL DEFAULT NULL,
+  `last_update_user` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`id_person`),
+  UNIQUE INDEX `id_person_UNIQUE` (`id_person` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`person_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`person_BEFORE_INSERT` BEFORE INSERT ON `person` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`person_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`person_BEFORE_UPDATE` BEFORE UPDATE ON `person` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+
+ALTER TABLE `mytravelhome`.`person` 
+CHANGE COLUMN `id_banck_account` `id_banck_account` VARCHAR(100) NOT NULL ,
+CHANGE COLUMN `id_district` `id_district` INT NOT NULL ,
+CHANGE COLUMN `id_gender` `id_gender` INT NOT NULL ;
+
+
+ALTER TABLE `mytravelhome`.`hotel` 
+DROP COLUMN `id_longitude`,
+CHANGE COLUMN `id_latitude` `id_geolocation` INT NOT NULL ;
+
+ALTER TABLE `mytravelhome`.`person` 
+CHANGE COLUMN `id_person` `id_person` VARCHAR(100) NOT NULL ;

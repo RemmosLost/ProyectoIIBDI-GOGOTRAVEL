@@ -1,0 +1,33 @@
+CREATE TABLE `mytravelhome`.`category` (
+  `id_category` INT NOT NULL AUTO_INCREMENT,
+  `category_name` VARCHAR(100) NOT NULL,
+  `creation_date` DATETIME NULL DEFAULT NULL,
+  `creation_user` VARCHAR(45) NULL DEFAULT NULL,
+  `last_update_date` DATETIME NULL DEFAULT NULL,
+  `last_update_user` VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (`id_category`),
+  UNIQUE INDEX `id_category_UNIQUE` (`id_category` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`category_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`category_BEFORE_INSERT` BEFORE INSERT ON `category` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`category_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`category_BEFORE_UPDATE` BEFORE UPDATE ON `category` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;

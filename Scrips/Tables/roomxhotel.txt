@@ -1,0 +1,33 @@
+CREATE TABLE `mytravelhome`.`roomxhotel` (
+  `id_room` INT NOT NULL,
+  `id_hotelcol` VARCHAR(45) NOT NULL,
+  `creation_user` VARCHAR(45) NULL DEFAULT NULL,
+  `creation_date` DATETIME NULL DEFAULT NULL,
+  `last_update_date` DATETIME NULL DEFAULT NULL,
+  `last_update_user` VARCHAR(45) NULL DEFAULT NULL,
+  `price` INT NOT NULL,
+  PRIMARY KEY (`id_room`, `id_hotelcol`));
+DROP TRIGGER IF EXISTS `mytravelhome`.`roomxhotel_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`roomxhotel_BEFORE_INSERT` BEFORE INSERT ON `roomxhotel` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`roomxhotel_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`roomxhotel_BEFORE_UPDATE` BEFORE UPDATE ON `roomxhotel` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;

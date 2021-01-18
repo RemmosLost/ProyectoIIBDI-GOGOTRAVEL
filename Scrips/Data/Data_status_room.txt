@@ -1,0 +1,5 @@
+INSERT INTO status_room(id_status_r, status_description, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, 'Disponible', NULL, NULL, NULL, Null);
+
+INSERT INTO status_room(id_status_r, status_description, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, 'No Disponible', NULL, NULL, NULL, Null);

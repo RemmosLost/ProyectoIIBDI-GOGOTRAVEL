@@ -1,0 +1,59 @@
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('500235779', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('500235009', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('k12345678', 3, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('117310571', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('718880331', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('113730331', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('117378971',1 , NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('313731105',1 , NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('113734571',1 , NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('113236231', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('110102256911140303', 6, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('123456789000', 5, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('454236231', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('354211131', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('651238238', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('521238238',1 , NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('7612355381', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('357134138', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('589641020', 1, NULL, NULL, NULL, Null);
+
+INSERT INTO personxnationality(id_person, id_nationality, creation_user, creation_date,last_update_date, last_update_user)
+VALUES ('152641020', 1, NULL, NULL, NULL, Null);

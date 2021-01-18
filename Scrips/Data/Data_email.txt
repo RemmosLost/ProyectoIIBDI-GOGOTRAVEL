@@ -1,0 +1,62 @@
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, 'sergio16@gmail.com' , '110102256911140303', NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, 'bertia90@gmail.com' ,'500235009', NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (3, 'sample6601@gmail.com','k12345678', NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (4,'rmma070199@gmail.com' ,'117310571', NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (5,'melano19@gmail.com' ,'117378971',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (6,'bbbb664@gmail.com' ,'113730331',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (7,'calvin1973@gmail.com' ,'718880331',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (8,'lucre22@gmail.com' ,'313731105',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (9,'juez31@gmail.com' ,'113734571', NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (10,'llpiedra@gmail.com' ,'113236231', NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (11,'chao03@gmail.com' ,'110102256911140303', NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (12,'kuyifu01@gmail.com' ,'123456789000',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (13,'avelio100@gmail.com' ,'454236231',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (14,'mire985@gmail.com' ,'354211131',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (15,'banbin11@gmail.com' ,'651238238',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (16,'banbin11.2@gmail.com' ,'521238238',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (17,'franquisto05@gmail.com' ,'761235538',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (18,'murciam05@gmail.com' ,'357134138',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (19,'abra999@gmail.com' ,'589641020',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (20,'pujol954@gmail.com' ,'152641020',  NULL, NULL, Null, Null);
+
+INSERT INTO email(id_email, email_address , id_person, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (21,'dbrenesmartinez@gmail.com' ,'117360763', NULL, NULL, Null, Null);

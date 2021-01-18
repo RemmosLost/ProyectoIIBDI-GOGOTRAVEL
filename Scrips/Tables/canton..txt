@@ -1,0 +1,34 @@
+CREATE TABLE `mytravelhome`.`canton` (
+  `id_canton` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `id_province` INT NOT NULL,
+  `creation_date` DATE NULL DEFAULT NULL,
+  `creation_user` VARCHAR(45) NULL DEFAULT NULL,
+  `last_update_date` DATE NULL DEFAULT NULL,
+  `last_update_user` VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (`id_canton`),
+  UNIQUE INDEX `id_canton_UNIQUE` (`id_canton` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`canton_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`canton_BEFORE_INSERT` BEFORE INSERT ON `canton` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`canton_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`canton_BEFORE_UPDATE` BEFORE UPDATE ON `canton` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;

@@ -1,0 +1,15 @@
+USE `mytravelhome`;
+DROP procedure IF EXISTS `insert_banck_account`;
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE PROCEDURE `insert_banck_account` (IN pbanck_account VARCHAR(200), IN pid_person VARCHAR(65))
+BEGIN
+	DECLARE EXIT HANDLER FOR 1105 SELECT 'Unknown error encountered.' Message;
+	DECLARE EXIT HANDLER FOR 1231 SELECT 'Variable cannot be set to that value.' Message;
+	DECLARE EXIT HANDLER FOR 1232 SELECT 'Incorrect argument type to variable.' Message;
+	INSERT INTO banck_account(banck_account, id_person)
+    values (pbanck_account, pid_person);
+    COMMIT;
+END$$
+
+DELIMITER ;

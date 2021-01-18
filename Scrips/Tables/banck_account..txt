@@ -1,0 +1,38 @@
+CREATE TABLE `mytravelhome`.`banck_account` (
+  `id_banck_account` INT NOT NULL AUTO_INCREMENT,
+  `bank_account` VARCHAR(200) NOT NULL,
+  `creation_date` DATETIME NULL DEFAULT NULL,
+  `creation_user` VARCHAR(45) NULL DEFAULT NULL,
+  `last_update_date` DATETIME NULL DEFAULT NULL,
+  `last_update_user` VARCHAR(45) NULL DEFAULT NULL,
+  `id_person` VARCHAR(65) NOT NULL,
+  PRIMARY KEY (`id_banck_account`),
+  UNIQUE INDEX `id_banck_account_UNIQUE` (`id_banck_account` ASC) VISIBLE,
+  UNIQUE INDEX `bank_account_UNIQUE` (`bank_account` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`banck_account_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`banck_account_BEFORE_INSERT` BEFORE INSERT ON `banck_account` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`banck_account_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`banck_account_BEFORE_UPDATE` BEFORE UPDATE ON `banck_account` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+ ALTER TABLE `mytravelhome`.`banck_account` 
+CHANGE COLUMN `bank_account` `banck_account` VARCHAR(200) NOT NULL ;

@@ -1,0 +1,13 @@
+-- Se encarga de de encriptar las contraseñas de los usuarios
+USE `mytravelhome`;
+DROP function IF EXISTS `passwordSecurity_Encrypt`;
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE FUNCTION `passwordSecurity_Encrypt`(pcUsername VARCHAR(4000), pcPassword VARCHAR(4000)) 	RETURNS varchar(4000)
+DETERMINISTIC
+BEGIN
+	DECLARE up VARCHAR(30);  
+	SET up = 'JY8mCSNDhPqEB5c';
+	RETURN sha1(CONCAT(pcUsername,up,pcPassword));
+END$$
+DELIMITER ;

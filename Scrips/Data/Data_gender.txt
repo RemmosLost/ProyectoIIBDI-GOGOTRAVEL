@@ -1,0 +1,11 @@
+INSERT INTO gender(id_gender, gender_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, 'Hombre', NULL, NULL, NULL, Null);
+
+INSERT INTO gender(id_gender, gender_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, 'Mujer', NULL, NULL, NULL, Null);
+
+INSERT INTO gender(id_gender, gender_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (3, 'Agénero', NULL, NULL, NULL, Null);
+
+INSERT INTO gender(id_gender, gender_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES (4, 'Otro', NULL, NULL, NULL, Null);

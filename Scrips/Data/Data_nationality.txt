@@ -1,0 +1,17 @@
+INSERT INTO nationality(id_nationality, nationality_name ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, 'Costarricense', NULL, NULL, NULL, Null);
+
+INSERT INTO nationality(id_nationality, nationality_name ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, 'Canadiense', NULL, NULL, NULL, Null);
+
+INSERT INTO nationality(id_nationality, nationality_name ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (3, 'Mexicano', NULL, NULL, NULL, Null);
+
+INSERT INTO nationality(id_nationality, nationality_name ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (4, 'Venezolano', NULL, NULL, NULL, Null);
+
+INSERT INTO nationality(id_nationality, nationality_name ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (5, 'Japones', NULL, NULL, NULL, Null);
+
+INSERT INTO nationality(id_nationality, nationality_name ,creation_user, creation_date, last_update_date, last_update_user)
+VALUES (6, 'Chino', NULL, NULL, NULL, Null);

@@ -1,0 +1,62 @@
+INSERT INTO username(username, password , id_person , id_type_user, creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Benito64', 'Benito64','500235779', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Day', 'soyadmin','117360763', 1, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Ricudo67', 'Ricudo67','500235009', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Blackch66', 'Blackch66','k12345678', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Rebbox07', 'Rebbox0701','117310571', 1, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Rositam198', 'Rositam198','117378971', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Uber64', 'Uber64','113730331', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Kamikase20', 'Kamikase20','718880331', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Skai89', 'Skai56','113734571', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Harley96', 'Harley96','113236231', 2, NULL ,NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('ChaoChao56', 'ChaoChao56','110102256911140303', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Yuuki', 'Yuuki','123456789000', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Avepiru', 'Avepiru','454236231', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Unica85', 'Unica85','354211131', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Kenzo86', 'Kenzo86','651238238', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Tiya986', 'Tiya986','521238238', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Ariff03', 'Ariff03','761235538', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('XOA05', 'XOA05','357134138', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Muse99', 'Muse99','589641020', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user ,  creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('Omega54', 'Omega54','152641020', 2, NULL , NULL, NULL, Null);
+
+INSERT INTO username(username, password , id_person , id_type_user , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('elpepe61', 'elpepe61','313731105', 2, NULL , NULL, NULL, Null);

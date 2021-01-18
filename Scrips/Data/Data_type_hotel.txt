@@ -1,0 +1,14 @@
+INSERT INTO type_hotel(id_type, type_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('1', '1 Estrella', NULL, NULL, NULL, Null);
+
+INSERT INTO type_hotel(id_type, type_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('2', '2 Estrella', NULL, NULL, NULL, Null);
+
+INSERT INTO type_hotel(id_type, type_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('3', '3 Estrella', NULL, NULL, NULL, Null);
+
+INSERT INTO type_hotel(id_type, type_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('4', '4 Estrella', NULL, NULL, NULL, Null);
+
+INSERT INTO type_hotel(id_type, type_name , creation_user, creation_date, last_update_date, last_update_user)
+VALUES ('5', '5 Estrella', NULL, NULL, NULL, Null);

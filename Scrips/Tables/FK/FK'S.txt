@@ -1,0 +1,234 @@
+ALTER TABLE `mytravelhome`.`agency` 
+ADD INDEX `fk_agency_photo_idx` (`id_photo_agency` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`agency` 
+ADD CONSTRAINT `fk_agency_photo`
+  FOREIGN KEY (`id_photo_agency`)
+  REFERENCES `mytravelhome`.`photo_agency` (`id_photo_agency`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+ALTER TABLE `mytravelhome`.`banck_account` 
+ADD INDEX `fk_banck_person_idx` (`id_person` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`banck_account` 
+ADD CONSTRAINT `fk_banck_person`
+  FOREIGN KEY (`id_person`)
+  REFERENCES `mytravelhome`.`person` (`id_person`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+ALTER TABLE `mytravelhome`.`canton` 
+ADD INDEX `fk_canton_province_idx` (`id_province` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`canton` 
+ADD CONSTRAINT `fk_canton_province`
+  FOREIGN KEY (`id_province`)
+  REFERENCES `mytravelhome`.`province` (`id_province`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+ALTER TABLE `mytravelhome`.`district` 
+ADD INDEX `fk_district_canton_idx` (`id_canton` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`district` 
+ADD CONSTRAINT `fk_district_canton`
+  FOREIGN KEY (`id_canton`)
+  REFERENCES `mytravelhome`.`canton` (`id_canton`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+ALTER TABLE `mytravelhome`.`email` 
+ADD INDEX `fk_email_person_idx` (`id_person` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`email` 
+ADD CONSTRAINT `fk_email_person`
+  FOREIGN KEY (`id_person`)
+  REFERENCES `mytravelhome`.`person` (`id_person`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+
+ALTER TABLE `mytravelhome`.`hotel` 
+ADD INDEX `fk_hotel_district_idx` (`id_district` ASC) VISIBLE,
+ADD INDEX `fk_hotel_status_idx` (`id_status` ASC) VISIBLE,
+ADD INDEX `fk_hotel_geolocation_idx` (`id_geolocation` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`hotel` 
+ADD CONSTRAINT `fk_hotel_district`
+  FOREIGN KEY (`id_district`)
+  REFERENCES `mytravelhome`.`district` (`id_district`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_hotel_status`
+  FOREIGN KEY (`id_status`)
+  REFERENCES `mytravelhome`.`status` (`id_status`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_hotel_geolocation`
+  FOREIGN KEY (`id_geolocation`)
+  REFERENCES `mytravelhome`.`geolocation` (`id_geolocation`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+ALTER TABLE `mytravelhome`.`hotelxservice` 
+ADD INDEX `fk_hxs_service_idx` (`id_service` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`hotelxservice` 
+ADD CONSTRAINT `fk_hxs_hotel`
+  FOREIGN KEY (`id_hotel`)
+  REFERENCES `mytravelhome`.`hotel` (`id_hotel`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_hxs_service`
+  FOREIGN KEY (`id_service`)
+  REFERENCES `mytravelhome`.`service` (`id_service`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+ALTER TABLE `mytravelhome`.`offer` 
+ADD INDEX `fk_offer_room_idx` (`id_room` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`offer` 
+ADD CONSTRAINT `fk_offer_room`
+  FOREIGN KEY (`id_room`)
+  REFERENCES `mytravelhome`.`room` (`id_room`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+
+ALTER TABLE `mytravelhome`.`person` 
+ADD INDEX `fk_person_photo_idx` (`id_photo_person` ASC) VISIBLE,
+ADD INDEX `fk_person_banck_idx` (`id_banck_account` ASC) VISIBLE,
+ADD INDEX `fk_person_district_idx` (`id_district` ASC) VISIBLE,
+ADD INDEX `fk_person_gender_idx` (`id_gender` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`person` 
+ADD CONSTRAINT `fk_person_photo`
+  FOREIGN KEY (`id_photo_person`)
+  REFERENCES `mytravelhome`.`photo_person` (`id_photo_person`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_person_banck`
+  FOREIGN KEY (`id_banck_account`)
+  REFERENCES `mytravelhome`.`banck_account` (`banck_account`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_person_district`
+  FOREIGN KEY (`id_district`)
+  REFERENCES `mytravelhome`.`district` (`id_district`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_person_gender`
+  FOREIGN KEY (`id_gender`)
+  REFERENCES `mytravelhome`.`gender` (`id_gender`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+ALTER TABLE `mytravelhome`.`person` 
+ADD INDEX `fk_person_photo_idx` (`id_photo_person` ASC) VISIBLE,
+ADD INDEX `fk_person_banck_idx` (`id_banck_account` ASC) VISIBLE,
+ADD INDEX `fk_person_district_idx` (`id_district` ASC) VISIBLE,
+ADD INDEX `fk_person_gender_idx` (`id_gender` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`person` 
+ADD CONSTRAINT `fk_person_photo`
+  FOREIGN KEY (`id_photo_person`)
+  REFERENCES `mytravelhome`.`photo_person` (`id_photo_person`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_person_banck`
+  FOREIGN KEY (`id_banck_account`)
+  REFERENCES `mytravelhome`.`banck_account` (`banck_account`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_person_district`
+  FOREIGN KEY (`id_district`)
+  REFERENCES `mytravelhome`.`district` (`id_district`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_person_gender`
+  FOREIGN KEY (`id_gender`)
+  REFERENCES `mytravelhome`.`gender` (`id_gender`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+ALTER TABLE `mytravelhome`.`photo_hotel` 
+ADD INDEX `fk_photoh_hotel_idx` (`id_hotel` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`photo_hotel` 
+ADD CONSTRAINT `fk_photoh_hotel`
+  FOREIGN KEY (`id_hotel`)
+  REFERENCES `mytravelhome`.`hotel` (`id_hotel`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+
+
+ALTER TABLE `mytravelhome`.`phone_number` 
+ADD INDEX `fk_phone_person_idx` (`id_person` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`phone_number` 
+ADD CONSTRAINT `fk_phone_person`
+  FOREIGN KEY (`id_person`)
+  REFERENCES `mytravelhome`.`person` (`id_person`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------
+
+ALTER TABLE `mytravelhome`.`hotelxcategory` 
+ADD INDEX `fk_hxc_category_idx` (`id_category` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`hotelxcategory` 
+ADD CONSTRAINT `fk_hxc_hotel`
+  FOREIGN KEY (`id_hotel`)
+  REFERENCES `mytravelhome`.`hotel` (`id_hotel`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_hxc_category`
+  FOREIGN KEY (`id_category`)
+  REFERENCES `mytravelhome`.`category` (`id_category`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+
+ALTER TABLE `mytravelhome`.`personxnationality` 
+ADD INDEX `fk_pxn_nationality_idx` (`id_nationality` ASC) VISIBLE;
+;
+ALTER TABLE `mytravelhome`.`personxnationality` 
+ADD CONSTRAINT `fk_pxn_person`
+  FOREIGN KEY (`id_person`)
+  REFERENCES `mytravelhome`.`person` (`id_person`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `fk_pxn_nationality`
+  FOREIGN KEY (`id_nationality`)
+  REFERENCES `mytravelhome`.`nationality` (`id_nationality`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;

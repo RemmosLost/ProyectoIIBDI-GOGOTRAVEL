@@ -1,0 +1,38 @@
+CREATE TABLE `mytravelhome`.`phone_number` (
+  `id_phone_number` INT NOT NULL,
+  `phone_number` INT NOT NULL,
+  `id_person` VARCHAR(30) NOT NULL,
+  `creation_date` DATETIME,
+  `creation_user` VARCHAR(100),
+  `last_update_date` DATETIME,
+  `last_update_user` VARCHAR(100),
+  PRIMARY KEY (`id_phone_number`),
+  UNIQUE INDEX `id_phone_number_UNIQUE` (`id_phone_number` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`phone_number_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`phone_number_BEFORE_INSERT` BEFORE INSERT ON `phone_number` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`phone_number_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`phone_number_BEFORE_UPDATE` BEFORE UPDATE ON `phone_number` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+
+ALTER TABLE `mytravelhome`.`phone_number` 
+CHANGE COLUMN `id_phone_number` `id_phone_number` INT NOT NULL AUTO_INCREMENT ;

@@ -1,0 +1,65 @@
+INSERT INTO country(id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES(1, 'Costa Rica', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (2, 'Estados Unidos', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (3, 'Canada', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (4, 'Mexico', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (5, 'Venezuela', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (6, 'Italia', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (7, 'Francia', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (8, 'Portugal', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (9, 'Inglaterra', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (10, 'Republica Checa', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (11, 'China', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (12, 'Corea del Sur', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (13, 'Filipinas', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (14, 'Japon',NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (15, 'Tailandia', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (16, 'Uganda', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (17, 'Sudafrica', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (18, 'Tanzania', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (19, 'Angola', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (20, 'Camerun', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (21, 'Australia', NULL, NULL, NULL, Null);
+
+INSERT INTO country (id_country, country_name, creation_user, creation_date, last_update_date, last_update_user) 
+VALUES (22, 'Otro', NULL, NULL, NULL, Null);

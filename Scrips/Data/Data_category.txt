@@ -1,0 +1,11 @@
+INSERT INTO category(id_category, category_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (1, 'Comerciales', NULL, NULL, NULL, Null);
+
+INSERT INTO category(id_category, category_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (2, 'Vacacionales', NULL, NULL, NULL, Null);
+
+INSERT INTO category(id_category, category_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (3, 'Convenciones', NULL, NULL, NULL, Null);
+
+INSERT INTO category(id_category, category_name, creation_user, creation_date, last_update_date, last_update_user)
+VALUES (4, 'Residentes', NULL, NULL, NULL, Null);

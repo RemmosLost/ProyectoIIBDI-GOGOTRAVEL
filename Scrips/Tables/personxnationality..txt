@@ -1,0 +1,46 @@
+CCREATE TABLE `mytravelhome`.`personxnationality` (
+  `id_person` VARCHAR(150) NOT NULL,
+  `id_nationality` INT NOT NULL,
+  `creation_user` DATETIME NULL DEFAULT NULL,
+  `creation_date` VARCHAR(45) NULL DEFAULT NULL,
+  `last_update_date` DATETIME NULL DEFAULT NULL,
+  `last_update_user` VARCHAR(45) NULL DEFAULT NULL,
+  PRIMARY KEY (`id_person`, `id_nationality`),
+  UNIQUE INDEX `id_person_UNIQUE` (`id_person` ASC) VISIBLE,
+  UNIQUE INDEX `id_nationality_UNIQUE` (`id_nationality` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`personXnationality_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`personXnationality_BEFORE_INSERT` BEFORE INSERT ON `personXnationality` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`personXnationality_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`personXnationality_BEFORE_UPDATE` BEFORE UPDATE ON `personXnationality` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+ 
+ALTER TABLE `mytravelhome`.`personxnationality` 
+CHANGE COLUMN `creation_user` `creation_user` VARCHAR(45) NULL DEFAULT NULL ,
+CHANGE COLUMN `creation_date` `creation_date` DATETIME NULL DEFAULT NULL ;
+
+ALTER TABLE `mytravelhome`.`personxnationality` 
+DROP INDEX `id_nationality_UNIQUE` ;
+;
+
+ALTER TABLE `mytravelhome`.`personxnationality` 
+DROP INDEX `id_person_UNIQUE` ;
+;

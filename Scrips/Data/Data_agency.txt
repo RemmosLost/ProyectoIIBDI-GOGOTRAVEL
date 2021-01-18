@@ -1,0 +1,47 @@
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+Values ('1', 'Costa Rica Unica', 'Unica', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+Values ('2', 'KAYAK', 'KAYAK', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+Values ('3', 'Viajes Magallanes', 'Magallanes', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+Values ('4', 'Viajes Faytur', 'Faytur', NULL, NULL, NULL, Null, Null);
+
+INSERT INTO agency (id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+VALUES ('5', 'Viajes Colón', 'Colon', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+VALUES ('6', 'Viajes del Sur', 'DelSur', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+VALUES ('7', 'Camino Travel', 'Travel', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+VALUES ('8', 'Mundo Viajes CR', 'CR', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user) 
+VALUES ('9', 'Viajes Bytto Costa Rica', 'Bytto', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+VALUES ('10', 'Jouney\'s Costa Rica', 'Jouney', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+VALUES ('11', 'Viajes Caravana', ' Caravana', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user) 
+VALUES ('12', 'Destinos Costa Rica DCR', 'DCR', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+VALUES ('13', 'Viajes SC', 'SC', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+VALUES ('14', 'Tour Operator', 'Operator', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user) 
+VALUES ('15', 'Costa Rica Trails', 'Trails', NULL, NULL, NULL, Null, Null);
+
+Insert into agency(id_agency, agency_name, password, id_photo_agency, creation_date, creation_user, last_update_date, last_update_user)
+VALUES ('16', 'Viajeros del Norte', 'DelNorte', NULL, NULL, NULL, Null, Null);

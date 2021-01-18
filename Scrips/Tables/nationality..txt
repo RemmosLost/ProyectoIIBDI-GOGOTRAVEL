@@ -1,0 +1,41 @@
+CREATE TABLE `mytravelhome`.`nationality` (
+  `id_nationality` INT NOT NULL,
+  `id_person` VARCHAR(30) NOT NULL,
+  `nationality_name` VARCHAR(100) NOT NULL,
+  `creation_date` DATETIME,
+  `creation_user` VARCHAR(45),
+  `last_update_date` DATETIME ,
+  `last_update_user` VARCHAR(45),
+  PRIMARY KEY (`id_nationality`),
+  UNIQUE INDEX `id_nationality_UNIQUE` (`id_nationality` ASC) VISIBLE);
+DROP TRIGGER IF EXISTS `mytravelhome`.`nationality_BEFORE_INSERT`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`nationality_BEFORE_INSERT` BEFORE INSERT ON `nationality` FOR EACH ROW
+BEGIN
+IF NEW.creation_date IS NULL OR NEW.creation_user IS NULL THEN 
+        SET NEW.creation_date = CURDATE();
+        SET NEW.creation_user = SYSTEM_USER();
+    END IF;
+END$$
+DELIMITER ;
+DROP TRIGGER IF EXISTS `mytravelhome`.`nationality_BEFORE_UPDATE`;
+
+DELIMITER $$
+USE `mytravelhome`$$
+CREATE DEFINER = CURRENT_USER TRIGGER `mytravelhome`.`nationality_BEFORE_UPDATE` BEFORE UPDATE ON `nationality` FOR EACH ROW
+BEGIN
+IF NEW.last_update_date IS NULL OR NEW.last_update_user IS NULL THEN
+        SET NEW.last_update_date = CURDATE();
+        SET NEW.last_update_user = SYSTEM_USER();
+END IF;
+END$$
+DELIMITER ;
+
+ALTER TABLE `mytravelhome`.`nationality` 
+CHANGE COLUMN `id_nationality` `id_nationality` INT NOT NULL AUTO_INCREMENT ;
+
+ALTER TABLE `mytravelhome`.`nationality` 
+DROP COLUMN `id_person`;
+
